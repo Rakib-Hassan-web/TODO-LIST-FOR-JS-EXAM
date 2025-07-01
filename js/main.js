@@ -71,6 +71,8 @@ let handlebutton = () => {
       extrainput.setAttribute('readonly', 'readonly')
 
 
+      // -----------------edit button process-----------
+
 
       editbutton.addEventListener('click', () => {
          editbutton.classList.toggle('extra')
@@ -89,6 +91,9 @@ let handlebutton = () => {
 
       })
 
+       deletbutton.addEventListener('click',()=>{
+         extraTODO.remove()
+       })
 
 
 
