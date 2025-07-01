@@ -127,7 +127,15 @@ body {
 }
 
 
+.extra {
+  background: transparent;
+  border: none;
+  font-size: 40px;
+  margin-top: 25px;
+  transition: all linear .4s;
+  cursor: pointer;
 
+}
 
 
 

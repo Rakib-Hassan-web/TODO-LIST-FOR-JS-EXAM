@@ -60,15 +60,34 @@ let handlebutton = () => {
       donebutton.innerHTML = '<i class="fa-regular fa-circle-check"></i>'
 
 
-
-
+      // -------------value transfer----------
       extrainput.value = input1.value
       input1.value = ''
 
 
 
+      // ---------------- extra input  readonly-----
+
+      extrainput.setAttribute('readonly', 'readonly')
 
 
+
+      editbutton.addEventListener('click', () => {
+         editbutton.classList.toggle('extra')
+
+         if (editbutton.classList[1] == 'extra') {
+            editbutton.innerHTML = '<i class="fa-solid fa-bookmark"></i>'
+            extrainput.removeAttribute('readonly', 'readonly')
+            editbutton.style = "color:#F564A9"
+
+         } else {
+            extrainput.setAttribute('readonly', 'readonly')
+            editbutton.innerHTML = '<i class="fa-regular fa-pen-to-square"></i>'
+            editbutton.style = "hover:green"
+
+         }
+
+      })
 
 
 
