@@ -1,3 +1,110 @@
+body {
+  background: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.main {
+  width: 550px;
+  /* backdrop-filter: blur(2px); */
+  border: 2px solid greenyellow;
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(255, 0, 0);
+  border-radius: 50%;
+
+}
+.pluss{
+  font-size: 30px;
+}
+
+.Error{
+  color: yellow;
+}
+.input1{
+  padding: 20px;
+  border: none;
+  outline: none;
+  background: rgba(81, 243, 162, 0.871);
+  font-size: 20px;
+  color: #000;
+  border-radius: 10px;
+}
+
+
+.inpBTN{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+
+}
+
+
+.extraTODO{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.extrainput{
+  padding: 20px;
+  border: none;
+  outline: none;
+  background: rgba(81, 243, 162, 0.871);
+  font-size: 20px;
+  color: #000;
+  border-radius: 10px;
+  margin-top: 25px;
+}
+
+.deletbutton {
+    background: transparent;
+    border: none;
+    font-size: 40px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.editbutton {
+    background: transparent;
+    border: none;
+    font-size: 40px;
+    margin-top: 25px;
+    cursor: pointer;
+
+}
+.donebutton {
+    background: transparent;
+    border: none;
+    font-size: 40px;
+    margin-top: 25px;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
 
 
 
@@ -35,7 +142,7 @@
   line-height: 1.5;
   margin: 0;
   -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
-  padding: 0;
+  padding: 5px;
 }
 
 .btn-31:disabled {
@@ -56,27 +163,23 @@
 }
 
 .btn-31 {
-  border-width: 1px;
-  padding: 1rem 2rem;
-  position: relative;
-  text-transform: uppercase;
+    border-width: 1px;
+    padding: 18px 2rem;
+    position: relative;
+    text-transform: uppercase;
 }
 
 .btn-31:before {
   --progress: 100%;
   background: #fff;
-  -webkit-clip-path: polygon(
-    100% 0,
-    var(--progress) var(--progress),
-    0 100%,
-    100% 100%
-  );
-  clip-path: polygon(
-    100% 0,
-    var(--progress) var(--progress),
-    0 100%,
-    100% 100%
-  );
+  -webkit-clip-path: polygon(100% 0,
+      var(--progress) var(--progress),
+      0 100%,
+      100% 100%);
+  clip-path: polygon(100% 0,
+      var(--progress) var(--progress),
+      0 100%,
+      100% 100%);
   content: "";
   inset: 0;
   position: absolute;
