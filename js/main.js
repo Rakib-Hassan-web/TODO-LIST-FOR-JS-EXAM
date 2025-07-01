@@ -3,14 +3,19 @@
 // ------------dom-----------
 
 let pluss =document.querySelector('.pluss')
-let Error =document.querySelector('.Error')
+let errorr =document.querySelector('.errorr')
 let input1 =document.querySelector('.input1')
 
 
-let i=0
+// let i=0
 
-pluss.innerHTML=i
+// pluss.innerHTML=i
+// pluss.innerHTML=++i
 
 let handlebutton =()=>{
-    pluss.innerHTML=++i
+
+
+   if(input1.value==''){
+    errorr.innerHTML='faka'
+   }
 }
