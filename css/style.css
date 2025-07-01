@@ -31,14 +31,20 @@ body {
   border-radius: 50%;
 
 }
-.pluss{
+
+.pluss {
   font-size: 30px;
 }
 
-.Error{
+.limit {
+  font-size: 30px;
+}
+
+.Error {
   color: yellow;
 }
-.input1{
+
+.input1 {
   padding: 20px;
   border: none;
   outline: none;
@@ -49,7 +55,7 @@ body {
 }
 
 
-.inpBTN{
+.inpBTN {
   display: flex;
   /* justify-content: center; */
   align-items: center;
@@ -59,13 +65,13 @@ body {
 }
 
 
-.extraTODO{
+.extraTODO {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.extrainput{
+.extrainput {
   padding: 20px;
   border: none;
   outline: none;
@@ -77,26 +83,28 @@ body {
 }
 
 .deletbutton {
-    background: transparent;
-    border: none;
-    font-size: 40px;
-    margin-top: 25px;
-    cursor: pointer;
+  background: transparent;
+  border: none;
+  font-size: 40px;
+  margin-top: 25px;
+  cursor: pointer;
 }
+
 .editbutton {
-    background: transparent;
-    border: none;
-    font-size: 40px;
-    margin-top: 25px;
-    cursor: pointer;
+  background: transparent;
+  border: none;
+  font-size: 40px;
+  margin-top: 25px;
+  cursor: pointer;
 
 }
+
 .donebutton {
-    background: transparent;
-    border: none;
-    font-size: 40px;
-    margin-top: 25px;
-    cursor: pointer;
+  background: transparent;
+  border: none;
+  font-size: 40px;
+  margin-top: 25px;
+  cursor: pointer;
 
 }
 
@@ -163,10 +171,10 @@ body {
 }
 
 .btn-31 {
-    border-width: 1px;
-    padding: 18px 2rem;
-    position: relative;
-    text-transform: uppercase;
+  border-width: 1px;
+  padding: 18px 2rem;
+  position: relative;
+  text-transform: uppercase;
 }
 
 .btn-31:before {
