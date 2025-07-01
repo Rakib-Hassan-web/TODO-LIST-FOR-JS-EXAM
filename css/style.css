@@ -88,6 +88,12 @@ body {
   font-size: 40px;
   margin-top: 25px;
   cursor: pointer;
+  transition: all linear .4s;
+}
+
+.deletbutton:hover{
+  transform: scale(1.3);
+  color: red;
 }
 
 .editbutton {
@@ -96,7 +102,13 @@ body {
   font-size: 40px;
   margin-top: 25px;
   cursor: pointer;
+  transition: all linear .4s;
 
+
+}
+.editbutton:hover{
+  transform: scale(1.3);
+  color: rgb(0, 255, 51);
 }
 
 .donebutton {
@@ -104,8 +116,14 @@ body {
   border: none;
   font-size: 40px;
   margin-top: 25px;
+  transition: all linear .4s;
   cursor: pointer;
 
+}
+
+.donebutton:hover{
+  transform: scale(1.3);
+  color: rgb(255, 222, 7);
 }
 
 
