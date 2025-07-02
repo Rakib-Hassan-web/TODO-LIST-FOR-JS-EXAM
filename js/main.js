@@ -10,10 +10,22 @@ let donebutton = document.querySelector('.donebutton')
 let totaltodo = document.querySelector('.totaltodo')
 
 
-
+// ------------right part--------
 let TOTALTODO = 0
 
 totaltodo.innerHTML = TOTALTODO
+
+
+
+// ----------------left part -------
+
+let i = 0
+
+pluss.innerHTML=i
+
+
+
+// ---------buton click part---------
 
 let handlebutton = () => {
 
@@ -101,8 +113,22 @@ let handlebutton = () => {
       TOTALTODO--
       totaltodo.innerHTML = TOTALTODO
 
+      if(extraTODO.classList[1]== 'done'){
+      i--
+      pluss.innerHTML=i
+
+      }
+
+
       })
 
+
+      donebutton.addEventListener('click',()=>{
+         i++
+          pluss.innerHTML=i
+          extraTODO.classList.add('done')
+
+      })
 
 
    }

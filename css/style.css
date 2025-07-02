@@ -140,6 +140,10 @@ body {
 
 
 
+.done .donebutton{
+  display: none;
+}
+
 
 
 
