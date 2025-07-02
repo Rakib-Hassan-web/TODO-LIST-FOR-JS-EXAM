@@ -7,12 +7,13 @@ let extra = document.querySelector('.extra')
 let deletbutton = document.querySelector('.deletbutton')
 let editbutton = document.querySelector('.editbutton')
 let donebutton = document.querySelector('.donebutton')
+let totaltodo = document.querySelector('.totaltodo')
 
 
-// let i=0
 
-// pluss.innerHTML=i
-// pluss.innerHTML=++i
+let TOTALTODO = 0
+
+totaltodo.innerHTML = TOTALTODO
 
 let handlebutton = () => {
 
@@ -21,6 +22,9 @@ let handlebutton = () => {
       errorr.innerHTML = 'faka'
    } else {
 
+
+      TOTALTODO++
+      totaltodo.innerHTML = TOTALTODO
 
 
       // -------create element-------
@@ -91,9 +95,13 @@ let handlebutton = () => {
 
       })
 
-       deletbutton.addEventListener('click',()=>{
+      deletbutton.addEventListener('click', () => {
          extraTODO.remove()
-       })
+         
+      TOTALTODO--
+      totaltodo.innerHTML = TOTALTODO
+
+      })
 
 
 
