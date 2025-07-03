@@ -1,5 +1,3 @@
-
-
 let pluss = document.querySelector('.pluss')
 let totaltodo = document.querySelector('.totaltodo')
 let errorr = document.querySelector('.errorr')
@@ -15,36 +13,45 @@ let donebutton = document.querySelector('.donebutton')
 
 
 
-let handlebutton =()=>{
+let handlebutton = () => {
 
 
- if(!input1.value){
-   alert('fuck you')
- }
-
-else{
-
-
-
-
-   let extraTODO=document.createElement('div')
+   if (!input1.value) {
+      alert('fuck you')
+   } else {
 
 
 
 
-   extra.appendChild(extraTODO)
-
-
-
-
-   extraTODO.classList.add('extraTODO')
+      let extraTODO = document.createElement('div')
+      let extrainput = document.createElement('input')
+      let deletbutton = document.createElement('button')
+      let editbutton = document.createElement('button')
+      let donebutton = document.createElement('button')
 
 
 
 
 
+      extra.appendChild(extraTODO)
+      extraTODO.appendChild(extrainput)
+      extraTODO.appendChild(deletbutton)
+      extraTODO.appendChild(editbutton)
+      extraTODO.appendChild(donebutton)
 
-}
+
+
+      extraTODO.classList.add('extraTODO')
+      extrainput.classList.add('extrainput')
+      deletbutton.classList.add('deletbutton')
+      editbutton.classList.add('editbutton')
+      donebutton.classList.add('donebutton')
+
+
+
+
+
+   }
 
 
 
@@ -217,7 +224,7 @@ else{
 
 //       deletbutton.addEventListener('click', () => {
 //          extraTODO.remove()
-         
+
 //       TOTALTODO--
 //       totaltodo.innerHTML = TOTALTODO
 
