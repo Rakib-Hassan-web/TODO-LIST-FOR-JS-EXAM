@@ -49,6 +49,7 @@ let handlebutton = () => {
 
 deletbutton.innerHTML='<i class="fa-regular fa-trash-can"></i>'
 
+      editbutton.innerHTML = '<i class="fa-regular fa-pen-to-square"></i>'
 
 
    }
