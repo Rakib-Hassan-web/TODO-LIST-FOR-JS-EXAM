@@ -64,6 +64,9 @@ let handlebutton = () => {
       })
 
 
+      extrainput.setAttribute('readonly' ,'readonly')
+
+
    }
 
 
