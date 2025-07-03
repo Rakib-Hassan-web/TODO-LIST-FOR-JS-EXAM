@@ -51,14 +51,17 @@ let handlebutton = () => {
 
       editbutton.innerHTML = '<i class="fa-regular fa-pen-to-square"></i>'
 
-      donebutton.innerHTML='<i class="fa-regular fa-circle-check"></i>'
+      donebutton.innerHTML = '<i class="fa-regular fa-circle-check"></i>'
 
 
 
+    extrainput.value=input1.value
 
-deletbutton.addEventListener('click',()=>{
-      extraTODO.remove()
-})
+    input1.value=''
+
+      deletbutton.addEventListener('click', () => {
+         extraTODO.remove()
+      })
 
 
    }
