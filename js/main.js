@@ -100,7 +100,14 @@ let handlebutton = () => {
             editbutton.style = "color:#F564A9"
 
 
-         } 
+         } else {
+            editbutton.innerHTML = '<i class="fa-regular fa-pen-to-square"></i>'
+
+            extrainput.setAttribute('readonly', 'readonly')
+
+            editbutton.style = "color:#02f01a"
+
+         }
 
 
       })
