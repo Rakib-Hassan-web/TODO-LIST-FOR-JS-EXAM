@@ -73,11 +73,7 @@ let handlebutton = () => {
          x--
          totaltodo.innerHTML=x
 
-         if(extraTODO.classList[1]=='donebtn'){
-            i--
-            pluss.innerHTML=i
-         }
-
+       
          
       })
 
@@ -124,7 +120,6 @@ let handlebutton = () => {
          extraTODO.classList.add('donebtn')
       
 
-         console.log(extraTODO.classList)
       })
 
 
