@@ -54,6 +54,13 @@ let handlebutton = () => {
       donebutton.innerHTML='<i class="fa-regular fa-circle-check"></i>'
 
 
+
+
+deletbutton.addEventListener('click',()=>{
+      extraTODO.remove()
+})
+
+
    }
 
 
