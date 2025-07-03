@@ -10,8 +10,15 @@ let editbutton = document.querySelector('.editbutton')
 let donebutton = document.querySelector('.donebutton')
 
 
+let i = 0
+
+pluss.innerHTML = i
 
 
+
+let x = 0
+
+totaltodo.innerHTML = x
 
 let handlebutton = () => {
 
@@ -20,7 +27,8 @@ let handlebutton = () => {
       alert('fuck you')
    } else {
 
-
+      x++
+      totaltodo.innerHTML = x
 
 
       let extraTODO = document.createElement('div')
@@ -55,16 +63,72 @@ let handlebutton = () => {
 
 
 
-    extrainput.value=input1.value
+      extrainput.value = input1.value
 
-    input1.value=''
+      input1.value = ''
 
       deletbutton.addEventListener('click', () => {
          extraTODO.remove()
+        
+         x--
+         totaltodo.innerHTML=x
+
+         if(extraTODO.classList[1]=='donebtn'){
+            i--
+            pluss.innerHTML=i
+         }
+
+         
       })
 
 
-      extrainput.setAttribute('readonly' ,'readonly')
+      extrainput.setAttribute('readonly', 'readonly')
+
+
+
+      editbutton.addEventListener('click', () => {
+
+         editbutton.classList.toggle('change')
+
+         if (editbutton.classList[1] == 'change') {
+
+            extrainput.removeAttribute('readonly', 'readonly')
+
+
+            editbutton.innerHTML = '<i class="fa-solid fa-bookmark"></i>'
+
+            editbutton.style = "color:#F564A9"
+
+
+         } else {
+            editbutton.innerHTML = '<i class="fa-regular fa-pen-to-square"></i>'
+
+            extrainput.setAttribute('readonly', 'readonly')
+
+            editbutton.style = "color:#02f01a"
+
+         }
+
+
+      })
+
+
+
+
+      donebutton.addEventListener('click', () => {
+
+         donebutton.style='display:none'
+         i++
+         pluss.innerHTML=i
+
+         extraTODO.classList.add('donebtn')
+      
+
+         console.log(extraTODO.classList)
+      })
+
+
+
 
 
    }
