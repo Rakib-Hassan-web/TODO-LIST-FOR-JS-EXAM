@@ -47,9 +47,11 @@ let handlebutton = () => {
       editbutton.classList.add('editbutton')
       donebutton.classList.add('donebutton')
 
-deletbutton.innerHTML='<i class="fa-regular fa-trash-can"></i>'
+      deletbutton.innerHTML = '<i class="fa-regular fa-trash-can"></i>'
 
       editbutton.innerHTML = '<i class="fa-regular fa-pen-to-square"></i>'
+
+      donebutton.innerHTML='<i class="fa-regular fa-circle-check"></i>'
 
 
    }
